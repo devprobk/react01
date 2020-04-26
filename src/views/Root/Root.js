@@ -4,13 +4,13 @@ import styled, { css } from 'styled-components';
 
 const Button = styled.button`
   padding: 0;
-  width: 220px;
-  height: 47px;
+  width: 22rem;
+  height: 4.7rem;
   border: none;
-  border-radius: 50px;
+  border-radius: 5rem;
   font-family: 'Montserrat';
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.6rem;
   text-align: center;
   text-transform: uppercase;
   color: ${({ color }) => color || '#000'};
@@ -20,9 +20,9 @@ const Button = styled.button`
     secondary &&
     css`
       background-color: ${({ backgroundColor }) => backgroundColor || '#e6e6e6'};
-      width: 105px;
-      height: 30px;
-      font-size: 12px;
+      width: 15rem;
+      height: 3rem;
+      font-size: 1.2rem;
     `};
 `;
 
@@ -30,14 +30,6 @@ const Root = () => (
   <>
     <GlobalStyle />
     <h1>Hello Kamil</h1>
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempore neque accusamus, cum
-      pariatur commodi sit deleniti assumenda impedit vel voluptas nisi placeat debitis, mollitia
-      laboriosam adipisci quo consequatur enim!
-      <p>Lorem</p>
-      <p>ipsum</p>
-      <p>dolor</p>
-    </div>
     <Button>close / save</Button>
     <Button secondary>remove</Button>
   </>

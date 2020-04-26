@@ -2,6 +2,11 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -14,9 +19,5 @@ export default createGlobalStyle`
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
   }
-
-  p {
-    margin: 2rem
-  }
-
+    
 `;
